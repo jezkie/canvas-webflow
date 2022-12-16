@@ -14,6 +14,12 @@ export class AppComponent {
   title = 'canvas-webflow';
 
   ngOnInit() {
+    
+  }
+
+  onQuery() {
+    console.log('got click');
+    
     this.svc.getAccounts().subscribe(accts => {
       console.log('Accounts in UI', accts);
       
